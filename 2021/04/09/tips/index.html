@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="keep IT on">
+    <meta name="keywords" content="tips, keep IT on">
     <meta name="description" content="没有梦想，何必远方！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>追寻，梦之岛！</title>
+    <title>tips | 追寻，梦之岛！</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">tips</h1>
                 </div>
             </div>
         </div>
@@ -429,9 +429,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -464,12 +468,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>title: 算法题中的常用函数 小结<br>date: 2021年4月9日 15:59:30<br>tags: 算法</p>
-</blockquote>
-<h2 id="算法题中的常用自定义函数"><a href="#算法题中的常用自定义函数" class="headerlink" title="算法题中的常用自定义函数"></a>算法题中的常用自定义函数</h2><p>今天，我们来总结下算法题中常用的一些函数，这些函数需要我们自己去写的，现在来总结以下，方便以后做题的时候用。</p>
+                <h2 id="算法题中的常用自定义函数"><a href="#算法题中的常用自定义函数" class="headerlink" title="算法题中的常用自定义函数"></a>算法题中的常用自定义函数</h2><p>今天，我们来总结下算法题中常用的一些函数，这些函数需要我们自己去写的，现在来总结以下，方便以后做题的时候用。</p>
 <p><strong>1.判断素数</strong></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isPrime</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">bool</span> flag = <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">if</span> (n == <span class="number">1</span> || n == <span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		flag = <span class="literal">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= <span class="built_in">sqrt</span>(n); i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (n % i == <span class="number">0</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			flag = <span class="literal">false</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> flag;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>这个效率是很高的，节约了一般的时间，不用全部遍历，别忘了加上头文件 “include &lt;cmath&gt;”</p>
 <p><strong>2.判断闰年</strong></p>
 <p>闰年条件：</p>
@@ -477,8 +479,10 @@
 <p>是4的倍数但不是100的倍数，或者是400的倍数</p>
 </blockquote>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 判断是否为闰年</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isLeapYear</span><span class="params">(<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> (y % <span class="number">4</span> == <span class="number">0</span> &amp;&amp; y % <span class="number">100</span> != <span class="number">0</span>) || (y % <span class="number">400</span> == <span class="number">0</span>);	</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
 <p><strong>3.判断日期</strong></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> month[<span class="number">2</span>][<span class="number">13</span>]=&#123;&#123;<span class="number">0</span>,<span class="number">31</span>,<span class="number">28</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>&#125;,<span class="comment">//定义了二维数组，平年2月28天，闰年2月29天</span></span><br><span class="line">				&#123;<span class="number">0</span>,<span class="number">31</span>,<span class="number">29</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>,<span class="number">30</span>,<span class="number">31</span>&#125;&#125;;</span><br><span class="line"><span class="comment">// 判断是否为日期</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isDate</span><span class="params">(<span class="keyword">int</span> s)</span> <span class="comment">// s为日期，格式:yyyymmdd</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> y, m, d;</span><br><span class="line">	<span class="keyword">bool</span> flag = <span class="literal">false</span>;</span><br><span class="line">	y = s / <span class="number">10000</span>;   <span class="comment">// 得到年份 </span></span><br><span class="line">	m = (s/<span class="number">100</span>) % <span class="number">100</span>; <span class="comment">// 得到月份 </span></span><br><span class="line">	d = s % <span class="number">100</span>;  <span class="comment">// 得到日 </span></span><br><span class="line">	<span class="keyword">if</span> (y &gt; <span class="number">0</span> &amp;&amp; m &gt; <span class="number">0</span> &amp;&amp; m &lt;= <span class="number">12</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (d &lt;= month[<span class="built_in">isLeapYear</span>(y)][m]) <span class="comment">// 判断日期是否正确 </span></span><br><span class="line">		&#123;</span><br><span class="line">			flag = <span class="literal">true</span>; </span><br><span class="line">		&#125;	</span><br><span class="line">	&#125;	</span><br><span class="line">	<span class="keyword">return</span> flag;</span><br><span class="line">&#125; </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p><strong>4.最大公因数和最小公倍数</strong></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 最大公因数</span></span><br><span class="line"><span class="comment">//函数递归调用</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">gcd</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (a % b == <span class="number">0</span>) &#123;</span><br><span class="line">		<span class="keyword">return</span> b;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">gcd</span>(b, a % b);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 最小公倍数 = a * b / gcd(a, b);</span></span><br><span class="line">k = a / <span class="built_in">gcd</span>(a, b) * b;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -487,6 +491,7 @@
 
 <p><strong>6.求最长公共子序列长度 LCS</strong></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxlen = <span class="number">1010</span>;</span><br><span class="line"><span class="keyword">char</span> s1[maxlen], s2[maxlen]; </span><br><span class="line"><span class="keyword">int</span> dp[maxlen][maxlen]; <span class="comment">// dp[i][j]为串s1的前i个字符和串s2的前j个字符的最大公共子串长度                         0,                                   ②</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i, j;</span><br><span class="line">	<span class="keyword">int</span> len1, len2, ret; <span class="comment">// ret记录结果 </span></span><br><span class="line">	cin &gt;&gt; s1 &gt;&gt; s2;</span><br><span class="line">	<span class="built_in">memset</span>(dp, <span class="number">0</span> , <span class="built_in"><span class="keyword">sizeof</span></span>(dp)); <span class="comment">// 初始化，刚开始LCS长度均为0 </span></span><br><span class="line">	len1 = <span class="built_in">strlen</span>(s1) ;</span><br><span class="line">	len2 = <span class="built_in">strlen</span>(s2);</span><br><span class="line">	ret = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; len1; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; len2; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (s1[i] == s2[j])</span><br><span class="line">			&#123;</span><br><span class="line">				dp[i + <span class="number">1</span>][j +<span class="number">1</span>] = dp[i][j] + <span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">			&#123;</span><br><span class="line">				dp[i + <span class="number">1</span>][j + <span class="number">1</span>] = <span class="number">0</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			ret = <span class="built_in">max</span>(ret, dp[i + <span class="number">1</span>][j + <span class="number">1</span>]); <span class="comment">// 随时更新最大值 </span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	cout &lt;&lt; ret;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>meset 用法 ： （string.h）<br>C 库函数 void *memset(void *str, int c, size_t n) 复制字符 c（一个无符号字符）到参数 str 所指向的字符串的前 n 个字符。</p>
 <p>sizeof 用法： sizeof (data type)  C++中的运算符</p>
 <p>重点：</p>
@@ -553,7 +558,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -732,9 +741,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="tips">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">tips</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -756,6 +765,14 @@
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
